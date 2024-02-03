@@ -976,7 +976,7 @@
       <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
        <RmStringVariable NAME="Editing Shader" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-Pixel Shader]]></RmTextDataBlock></RmStringVariable>
+Vertex Shader]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1004,19 +1004,19 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-4/2/2024 8:6:44]]></RmTextDataBlock></RmStringVariable>
+4/2/2024 8:13:2]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey 1.71]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="BASE_WORKSPACE_PATH" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-C:\Users\bnm00\Desktop\]]></RmTextDataBlock></RmStringVariable>
+C:\Users\bnm00\Desktop\Render-Monkey-Example\]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
    </RmRegistryBranch>
   </RmRegistryBranch>
   <RmDirectXEffect NAME="Default_DirectX_Effect" API="D3D" ACTIVE_CAMERA="">
-   <RmMatrixVariable NAME="gWorldViewProjection" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="WorldViewProjection" VALUE_0="1.408865" VALUE_1="-1.434492" VALUE_2="0.004405" VALUE_3="-0.000009" VALUE_4="0.378986" VALUE_5="0.379445" VALUE_6="2.353895" VALUE_7="0.000142" VALUE_8="-0.696665" VALUE_9="-0.683536" VALUE_10="0.222351" VALUE_11="199.199203" VALUE_12="-0.695968" VALUE_13="-0.682853" VALUE_14="0.222129" VALUE_15="200.000000"/>
-   <RmMatrixVariable NAME="gWorld" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="World" VALUE_0="1.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="1.000000" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.000000" VALUE_11="0.000000" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
+   <RmMatrixVariable NAME="gWorldViewProjectionMatrix" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="WorldViewProjection" VALUE_0="2.010643" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="2.414214" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.001001" VALUE_11="199.199188" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="1.000000" VALUE_15="200.000000"/>
+   <RmMatrixVariable NAME="gWorldMatrix" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="World" VALUE_0="1.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="1.000000" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.000000" VALUE_11="0.000000" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
    <RmDynamicVariable NAME="lightDirection" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VARIABLE_TYPE="FLOAT" ROWS="3" COLUMNS="1" FIXED_SIZE="TRUE" MIN="-1.000000" MAX="1.000000" CLAMP="FALSE" NORMALIZE="FALSE">
     <RmDynamicVariableValueContainer>
      <RmDynamicVariableValue ROW_INDEX="0" COLUMN_INDEX="0" VALUE="30.000000"/>
@@ -1025,7 +1025,7 @@ C:\Users\bnm00\Desktop\]]></RmTextDataBlock></RmStringVariable>
     </RmDynamicVariableValueContainer>
    </RmDynamicVariable>
    <RmColorVariable NAME="gBaseColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
-   <Rm2DTextureVariable NAME="gBaseMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME="..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Textures\Earth.jpg" ORIGIN="0"/>
+   <Rm2DTextureVariable NAME="Earth" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME=".\Textures\Earth.jpg" ORIGIN="0"/>
    <RmStreamMap NAME="Stream Mapping" API="">
     <RmStream NAME="Stream" API="" STRIDE="32">
      <RmStreamChannel NAME="Position_0" API="" DATA_SIZE="12" DATA_TYPE="2" REGISTER="0" USAGE="0" USAGE_INDEX="0" ATTRIBUTE_NAME="rm_Vertex"/>
@@ -1033,12 +1033,12 @@ C:\Users\bnm00\Desktop\]]></RmTextDataBlock></RmStringVariable>
      <RmStreamChannel NAME="TexCoord_0" API="" DATA_SIZE="8" DATA_TYPE="1" REGISTER="0" USAGE="5" USAGE_INDEX="0" ATTRIBUTE_NAME="rm_UV"/>
     </RmStream>
    </RmStreamMap>
-   <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\Sphere.3ds" ORIENTATION="0"/>
+   <RmModelData NAME="Model" API="" FILE_NAME="..\..\..\..\Program Files (x86)\AMD\RenderMonkey 1.82\Examples\Media\Models\Sphere.3ds" ORIENTATION="0"/>
    <RmPass NAME="Pass 0" API="D3D" PASS_INDEX="0" ENABLED="TRUE">
     <RmModelReference NAME="Model" API=""/>
     <RmHLSLShader NAME="Vertex Shader" API="D3D" PIXEL_SHADER="FALSE" TARGET="vs_2_0" ENTRY_POINT="vs_main" COMPILER_FLAGS="0"><RmShaderCode TYPE="TEXT"><![CDATA[
-float4x4 gWorldViewProjection;
-float4x4 gWorld;
+float4x4 gWorldViewProjectionMatrix;
+float4x4 gWorldMatrix;
 
 struct VS_INPUT
 {
@@ -1058,14 +1058,14 @@ VS_OUTPUT vs_main(VS_INPUT IN)
 {
     VS_OUTPUT Out;
 
-    Out.positionCS = mul(IN.positionOS, gWorldViewProjection);
-    Out.normal = mul(float4(IN.normal,0), gWorld);
+    Out.positionCS = mul(IN.positionOS, gWorldViewProjectionMatrix);
+    Out.normal = mul(float4(IN.normal,0), gWorldMatrix);
     Out.uv = IN.uv;
 
     return Out;
 }]]></RmShaderCode>
-     <RmShaderConstant NAME="gWorld" API="" REGISTER="4"/>
-     <RmShaderConstant NAME="gWorldViewProjection" API="" REGISTER="0"/>
+     <RmShaderConstant NAME="gWorldMatrix" API="" REGISTER="4"/>
+     <RmShaderConstant NAME="gWorldViewProjectionMatrix" API="" REGISTER="0"/>
     </RmHLSLShader>
     <RmHLSLShader NAME="Pixel Shader" API="D3D" PIXEL_SHADER="TRUE" TARGET="ps_2_0" ENTRY_POINT="ps_main" COMPILER_FLAGS="0"><RmShaderCode TYPE="TEXT"><![CDATA[
 sampler2D BaseMap;
@@ -1081,13 +1081,12 @@ struct PS_INPUT
 
 float4 ps_main(PS_INPUT IN) : COLOR0
 {
-    // 텍스처 샘플링
     float4 color = tex2D(BaseMap, IN.uv);
 
-    float NdotL = dot(IN.normal, normalize(lightDirection)); // 빛과 면의 각도 계산
-    float4 Diffuse = NdotL * gBaseColor; // 빛과 면의 각도에 따른 색상 계산
+    float NdotL = dot(IN.normal, normalize(lightDirection));
+    float4 Diffuse = NdotL * gBaseColor;
 
-    color *= Diffuse; // 색상 계산
+    color *= Diffuse;
 
     return color;
 
@@ -1098,7 +1097,7 @@ float4 ps_main(PS_INPUT IN) : COLOR0
     </RmHLSLShader>
     <RmStreamMapReference NAME="Stream Mapping" API=""/>
     <RmTextureObject NAME="BaseMap" API="D3D" STATE_INDEX="0" VERTEX_TEXTURE="FALSE">
-     <RmTextureReference NAME="gBaseMap" API=""/>
+     <RmTextureReference NAME="Earth" API=""/>
     </RmTextureObject>
    </RmPass>
   </RmDirectXEffect>
