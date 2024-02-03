@@ -976,7 +976,7 @@
       <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
        <RmStringVariable NAME="Editing Shader" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-Vertex Shader]]></RmTextDataBlock></RmStringVariable>
+Pixel Shader]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1004,7 +1004,7 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-4/2/2024 8:13:2]]></RmTextDataBlock></RmStringVariable>
+4/2/2024 8:14:45]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1040,23 +1040,23 @@ C:\Users\bnm00\Desktop\Render-Monkey-Example\]]></RmTextDataBlock></RmStringVari
 float4x4 gWorldViewProjectionMatrix;
 float4x4 gWorldMatrix;
 
-struct VS_INPUT
+struct Attribute
 {
     float4 positionOS : POSITION;
     float3 normal : NORMAL;
     float2 uv : TEXCOORD0;
 };
 
-struct VS_OUTPUT
+struct Varrying
 {
     float4 positionCS : POSITION;
     float3 normal : TEXCOORD0;
     float2 uv : TEXCOORD1;
 };
 
-VS_OUTPUT vs_main(VS_INPUT IN)
+Varrying vs_main(Attribute IN)
 {
-    VS_OUTPUT Out;
+    Varrying Out;
 
     Out.positionCS = mul(IN.positionOS, gWorldViewProjectionMatrix);
     Out.normal = mul(float4(IN.normal,0), gWorldMatrix);
@@ -1072,14 +1072,14 @@ sampler2D BaseMap;
 float4 gBaseColor;
 float3 lightDirection;
 
-struct PS_INPUT
+struct Varrying
 {
     float4 positionCS : POSITION;
     float3 normal : TEXCOORD0;
     float2 uv : TEXCOORD1;
 };
 
-float4 ps_main(PS_INPUT IN) : COLOR0
+float4 ps_main(Varrying IN) : COLOR0
 {
     float4 color = tex2D(BaseMap, IN.uv);
 
