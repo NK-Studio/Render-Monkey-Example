@@ -914,8 +914,8 @@
      <RmRegistryBranch NAME="RmPreviewDx9Window" API="" XML_VERSION="RenderMonkey 1.71">
       <RmRegistryBranch NAME="EffectPlacementRepository" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect" API="" XML_VERSION="RenderMonkey 1.71">
-        <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="868" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="87" MIN="-10" MAX="10" CLAMP="FALSE"/>
+        <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1302" MIN="-10" MAX="10" CLAMP="FALSE"/>
+        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="130" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="916" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="655" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -941,7 +941,7 @@
        </RmRegistryBranch>
        <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect._SpecularColor" API="" XML_VERSION="RenderMonkey 1.71">
         <RmIntegerVariable NAME="DockPaneID" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1114" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmBooleanVariable NAME="FloatingPoint" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="FALSE"/>
+        <RmBooleanVariable NAME="FloatingPoint" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
         <RmIntegerVariable NAME="ColorType" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmBooleanVariable NAME="LargeSize" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
        </RmRegistryBranch>
@@ -964,10 +964,6 @@
      </RmRegistryBranch>
      <RmRegistryBranch NAME="RmDynamicVariableEditor" API="" XML_VERSION="RenderMonkey 1.71">
       <RmRegistryBranch NAME="NodeRepository" API="" XML_VERSION="RenderMonkey 1.71">
-       <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect._WorldSpaceCameraPos" API="" XML_VERSION="RenderMonkey 1.71">
-        <RmIntegerVariable NAME="DockPaneID" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1111" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmBooleanVariable NAME="ShowSetup" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
-       </RmRegistryBranch>
        <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect._MainLightPosition" API="" XML_VERSION="RenderMonkey 1.71">
         <RmIntegerVariable NAME="DockPaneID" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1117" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmBooleanVariable NAME="ShowSetup" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="TRUE"/>
@@ -993,7 +989,7 @@
       <RmRegistryBranch NAME="Effect Workspace.Default_DirectX_Effect" API="" XML_VERSION="RenderMonkey 1.71">
        <RmRegistryBranch NAME="Disassembly" API="" XML_VERSION="RenderMonkey 1.71"/>
        <RmStringVariable NAME="Editing Shader" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-Vertex Shader]]></RmTextDataBlock></RmStringVariable>
+Pixel Shader]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1058,7 +1054,7 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-5/2/2024 7:27:58]]></RmTextDataBlock></RmStringVariable>
+5/2/2024 8:16:24]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1072,30 +1068,24 @@ C:\Users\bnm00\Desktop\Render-Monkey-Example\]]></RmTextDataBlock></RmStringVari
    <RmFloatVariable NAME="_SpecularPower" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="25.000000" MIN="1.000000" MAX="100.000000" CLAMP="TRUE"/>
    <RmDynamicVariable NAME="_MainLightPosition" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VARIABLE_TYPE="FLOAT" ROWS="3" COLUMNS="1" FIXED_SIZE="TRUE" MIN="-100.000000" MAX="100.000000" CLAMP="TRUE" NORMALIZE="FALSE">
     <RmDynamicVariableValueContainer>
-     <RmDynamicVariableValue ROW_INDEX="0" COLUMN_INDEX="0" VALUE="-2.000000"/>
-     <RmDynamicVariableValue ROW_INDEX="1" COLUMN_INDEX="0" VALUE="-86.000000"/>
-     <RmDynamicVariableValue ROW_INDEX="2" COLUMN_INDEX="0" VALUE="100.000000"/>
-    </RmDynamicVariableValueContainer>
-   </RmDynamicVariable>
-   <RmDynamicVariable NAME="_WorldSpaceCameraPos" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VARIABLE_TYPE="FLOAT" ROWS="3" COLUMNS="1" FIXED_SIZE="TRUE" MIN="-100.000000" MAX="100.000000" CLAMP="TRUE" NORMALIZE="FALSE">
-    <RmDynamicVariableValueContainer>
-     <RmDynamicVariableValue ROW_INDEX="0" COLUMN_INDEX="0" VALUE="0.000000"/>
-     <RmDynamicVariableValue ROW_INDEX="1" COLUMN_INDEX="0" VALUE="0.000000"/>
+     <RmDynamicVariableValue ROW_INDEX="0" COLUMN_INDEX="0" VALUE="100.000000"/>
+     <RmDynamicVariableValue ROW_INDEX="1" COLUMN_INDEX="0" VALUE="100.000000"/>
      <RmDynamicVariableValue ROW_INDEX="2" COLUMN_INDEX="0" VALUE="-100.000000"/>
     </RmDynamicVariableValueContainer>
    </RmDynamicVariable>
    <RmMatrixVariable NAME="MATRIX_V" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="View" VALUE_0="0.676848" VALUE_1="-0.350286" VALUE_2="-0.647439" VALUE_3="0.000000" VALUE_4="0.285375" VALUE_5="-0.685882" VALUE_6="0.669423" VALUE_7="0.000114" VALUE_8="-0.678556" VALUE_9="-0.637860" VALUE_10="-0.364274" VALUE_11="199.999771" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
    <RmMatrixVariable NAME="MATRIX_W" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="World" VALUE_0="1.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="1.000000" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.000000" VALUE_11="0.000000" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
    <RmMatrixVariable NAME="MATRIX_P" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="Projection" VALUE_0="1.655766" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="2.414214" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.001001" VALUE_11="-1.001001" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="1.000000" VALUE_15="0.000000"/>
-   <RmMatrixVariable NAME="MATRIX_VP" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewProjection" VALUE_0="-0.757000" VALUE_1="-0.636041" VALUE_2="-1.328143" VALUE_3="0.000000" VALUE_4="1.935014" VALUE_5="0.514009" VALUE_6="-1.349053" VALUE_7="0.000368" VALUE_8="0.385822" VALUE_9="-0.899291" VALUE_10="0.210760" VALUE_11="199.199158" VALUE_12="0.385436" VALUE_13="-0.898392" VALUE_14="0.210549" VALUE_15="199.999969"/>
-   <RmFloatVariable NAME="_BumpScale" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.800000" MIN="0.000000" MAX="10.000000" CLAMP="TRUE"/>
-   <RmFloatVariable NAME="_Parallax" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.005000" MIN="0.005000" MAX="0.008000" CLAMP="TRUE"/>
-   <RmColorVariable NAME="_MainLightColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="1.000000" VALUE_1="1.000000" VALUE_2="1.000000" VALUE_3="1.000000"/>
-   <RmColorVariable NAME="_SpecularColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.490196" VALUE_1="0.488722" VALUE_2="0.488722" VALUE_3="1.000000"/>
-   <RmColorVariable NAME="_Ambient" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.300000" VALUE_1="0.300000" VALUE_2="0.300000" VALUE_3="1.000000"/>
+   <RmMatrixVariable NAME="MATRIX_VP" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewProjection" VALUE_0="1.649991" VALUE_1="0.122900" VALUE_2="-0.063152" VALUE_3="-0.000000" VALUE_4="0.092295" VALUE_5="0.000526" VALUE_6="2.412449" VALUE_7="0.000119" VALUE_8="0.074254" VALUE_9="-0.998240" VALUE_10="-0.002623" VALUE_11="218.921371" VALUE_12="0.074180" VALUE_13="-0.997242" VALUE_14="-0.002620" VALUE_15="219.702454"/>
+   <RmFloatVariable NAME="_BumpScale" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="10.000000" CLAMP="TRUE"/>
+   <RmFloatVariable NAME="_Parallax" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.032750" MIN="0.005000" MAX="0.080000" CLAMP="TRUE"/>
+   <RmVectorVariable NAME="_WorldSpaceCameraPos" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewPosition" VALUE_0="-16.297422" VALUE_1="219.096375" VALUE_2="0.575696" VALUE_3="1.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
+   <RmColorVariable NAME="_Ambient" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.460938" VALUE_1="0.460938" VALUE_2="0.460938" VALUE_3="1.000000"/>
+   <RmColorVariable NAME="_MainLightColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.700000" VALUE_1="0.700000" VALUE_2="1.000000" VALUE_3="1.000000"/>
+   <RmColorVariable NAME="_SpecularColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.700000" VALUE_1="0.700000" VALUE_2="0.700000" VALUE_3="1.000000"/>
+   <Rm2DTextureVariable NAME="BumpMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME=".\Textures\normal_map.jpg" ORIGIN="0"/>
    <Rm2DTextureVariable NAME="BaseMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME=".\Textures\color_map.jpg" ORIGIN="0"/>
    <Rm2DTextureVariable NAME="HeightMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME=".\Textures\height_map.jpg" ORIGIN="0"/>
-   <Rm2DTextureVariable NAME="BumpMap" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" FILE_NAME=".\Textures\normal_map.jpg" ORIGIN="0"/>
    <RmStreamMap NAME="Stream Mapping" API="">
     <RmStream NAME="Stream" API="" STRIDE="60">
      <RmStreamChannel NAME="Position_0" API="" DATA_SIZE="12" DATA_TYPE="2" REGISTER="0" USAGE="0" USAGE_INDEX="0" ATTRIBUTE_NAME="rm_Vertex"/>
@@ -1111,7 +1101,7 @@ C:\Users\bnm00\Desktop\Render-Monkey-Example\]]></RmTextDataBlock></RmStringVari
     <RmHLSLShader NAME="Vertex Shader" API="D3D" PIXEL_SHADER="FALSE" TARGET="vs_2_0" ENTRY_POINT="vs_main" COMPILER_FLAGS="0"><RmShaderCode TYPE="TEXT"><![CDATA[
 // Common Start --------------------------------------
 float3 _MainLightPosition;
-float3 _WorldSpaceCameraPos;
+float4 _WorldSpaceCameraPos;
 
 float4x4 MATRIX_W;
 float4x4 MATRIX_V;
@@ -1134,9 +1124,9 @@ struct Varying
     float2 uv : TEXCOORD0;
     float3 viewDirection : TEXCOORD1;
     float3 lightDirection : TEXCOORD2;
-    float4 tSpace0 : TEXCOORD3;
-    float4 tSpace1 : TEXCOORD4;
-    float4 tSpace2 : TEXCOORD5;
+    float3 tSpace0 : TEXCOORD3;
+    float3 tSpace1 : TEXCOORD4;
+    float3 tSpace2 : TEXCOORD5;
 };
 
 // #pragma Vertex vs_main
@@ -1201,13 +1191,9 @@ Varying vs_main(Attribute IN)
     Out.lightDirection = normalize(positionWS - _MainLightPosition);    
     Out.viewDirection = GetWorldSpaceNormalizeViewDir(positionWS);
     
-    float3 normalWS = TransformObjectToWorldNormal(IN.normalOS);
-    float3 tangentWS = TransformObjectToWorldDir(IN.tangentOS.xyz);
-    float3 binormalWS = TransformObjectToWorldDir(IN.binormalOS);
-
-    Out.tSpace0 = float4(normalWS, positionWS.x);
-    Out.tSpace1 = float4(tangentWS, positionWS.y);
-    Out.tSpace2 = float4(binormalWS, positionWS.z);
+    Out.tSpace0 = normalize(mul(IN.normalOS, (float3x3)MATRIX_W));
+    Out.tSpace1 = normalize(mul(IN.tangentOS, (float3x3)MATRIX_W));
+    Out.tSpace2 = normalize(mul(IN.binormalOS, (float3x3)MATRIX_W));
 
     Out.uv = IN.uv;
 
@@ -1222,7 +1208,7 @@ Varying vs_main(Attribute IN)
     <RmHLSLShader NAME="Pixel Shader" API="D3D" PIXEL_SHADER="TRUE" TARGET="ps_2_0" ENTRY_POINT="ps_main" COMPILER_FLAGS="0"><RmShaderCode TYPE="TEXT"><![CDATA[
 // Common Start --------------------------------------
 float3 _MainLightPosition;
-float3 _WorldSpaceCameraPos;
+float4 _WorldSpaceCameraPos;
 //  ----------------------------------------------------
 
 // Utility Start ----------------------------------------
@@ -1232,22 +1218,12 @@ float3 UnpackNormalAG(float4 packedNormal, float scale = 1.0)
     normal.xy = packedNormal.ag * 2.0 - 1.0;
     normal.z = max(1.0e-16, sqrt(1.0 - saturate(dot(normal.xy, normal.xy))));
 
-    // must scale after reconstruction of normal.z which also
-    // mirrors UnpackNormalRGB(). This does imply normal is not returned
-    // as a unit length vector but doesn't need it since it will get normalized after TBN transformation.
-    // If we ever need to blend contributions with built-in shaders for URP
-    // then we should consider using UnpackDerivativeNormalAG() instead like
-    // HDRP does since derivatives do not use renormalization and unlike tangent space
-    // normals allow you to blend, accumulate and scale contributions correctly.
     normal.xy *= scale;
     return normal;
 }
 
-// this function is intended to work on Normals (handles non-uniform scale)
-// tangentToWorld is the matrix representing the transformation of a normal from tangent to world space
 float3 TransformTangentToWorld(float3 normalTS, float3x3 tangentToWorld, bool doNormalize)
 {
-    // Note matrix is in row major convention with left multiplication as it is build on the fly
     float3 result = mul(transpose(tangentToWorld), normalTS);
     
     if (doNormalize)
@@ -1256,10 +1232,8 @@ float3 TransformTangentToWorld(float3 normalTS, float3x3 tangentToWorld, bool do
     return result;
 }
 
-// Unpack normal as DXT5nm (1, y, 0, x) or BC5 (x, y, 0, 1)
 float3 UnpackNormalmapRGorAG(float4 packedNormal, float scale = 1.0)
 {
-    // Convert to (?, y, 0, x)
     packedNormal.a *= packedNormal.r;
     return UnpackNormalAG(packedNormal, scale);
 }
@@ -1269,40 +1243,16 @@ float3 UnpackNormalScale(float4 packedNormal, float bumpScale)
     return UnpackNormalmapRGorAG(packedNormal, bumpScale);
 }
 
-half2 ParallaxOffset1Step(float height, float amplitude, float3 viewDirTS)
-{
-    height = height * amplitude - amplitude / 2.0;
-    float3 v = normalize(viewDirTS);
-    v.z += 0.42;
-    return height * (v.xy / v.z);
-}
-
-float2 ParallaxMapping(sampler2D heightMap, half3 viewDirTS, half scale, float2 uv)
-{
-    half h = tex2D(heightMap, uv).g;
-    float2 offset = ParallaxOffset1Step(h, scale, viewDirTS);
-    return offset;
-}
-
 void ApplyPerPixelDisplacement(sampler2D heightMap, float scale, float3 viewDirTS, inout float2 uv)
 {
-    uv += ParallaxMapping(heightMap, viewDirTS, scale, uv);
+    float h = tex2D(heightMap, uv).g; 
+    float3 v = normalize(viewDirTS);
+    uv += scale * h * (-v.xy / v.z);
 }
 
-half3 GetViewDirectionTangentSpace(float3 bitnormalWS, float3 tangentWS, float3 normalWS, float3 viewDirWS)
+half3 GetViewDirectionTangentSpace(float3 normalWS, float3 tangentWS, float3 bitnormalWS, float3 viewDirWS)
 {
-
-    half3 unnormalizedNormalWS = normalWS;
-    const half renormFactor = 1.0 / length(unnormalizedNormalWS);
-
-    half3 WorldSpaceNormal = renormFactor * normalWS.xyz;
-    half3 WorldSpaceTangent = renormFactor * tangentWS.xyz;
-    half3 WorldSpaceBiTangent = renormFactor * bitnormalWS.xyz;
-
-    half3x3 tangentSpaceTransform = half3x3(WorldSpaceTangent, WorldSpaceBiTangent, WorldSpaceNormal);
-    half3 viewDirTS = mul(tangentSpaceTransform, viewDirWS);
-
-    return viewDirTS;
+    return mul(float3x3(tangentWS, bitnormalWS, normalWS), viewDirWS); // making view vector in tangent space;
 }
 
 // ----------------------------------------------------
@@ -1312,10 +1262,9 @@ struct Varying
     float2 uv : TEXCOORD0;
     float3 viewDirection : TEXCOORD0;
     float3 lightDirection : TEXCOORD1;
-    float4 tSpace0 : TEXCOORD2; // Normal
-    float4 tSpace1 : TEXCOORD3; // Tangent
-    float4 tSpace2 : TEXCOORD4; // Binormal
-
+    float3 tSpace0 : TEXCOORD2; // Normal
+    float3 tSpace1 : TEXCOORD3; // Tangent
+    float3 tSpace2 : TEXCOORD4; // Binormal
 };
 
 sampler2D _BaseMap;
@@ -1334,35 +1283,40 @@ float _Parallax;
 // Fragment shader
 float4 ps_main(Varying IN) : COLOR
 {
-    float3 WorldNormal = normalize(IN.tSpace0.xyz);
+    float3 WorldNormal = IN.tSpace0.xyz;
     float3 WorldTangent = IN.tSpace1.xyz;
-    float3 WorldBiTangent = IN.tSpace2.xyz;
-    float3 WorldPosition = float3(IN.tSpace0.w, IN.tSpace1.w, IN.tSpace2.w);
+    float3 WorldBiNormal = IN.tSpace2.xyz;
 
     // Parallex
-    half3 viewDirTS = GetViewDirectionTangentSpace(WorldBiTangent, WorldTangent, WorldNormal, IN.viewDirection);
+    float3 viewDirTS = GetViewDirectionTangentSpace(WorldNormal, WorldTangent, WorldBiNormal, IN.viewDirection);
     ApplyPerPixelDisplacement(_ParallaxMap, _Parallax, viewDirTS, IN.uv);
     
     // Normal
     float3 normal = UnpackNormalScale(tex2D(_BumpMap, IN.uv), _BumpScale);
-    float3 normalWS = TransformTangentToWorld(normal, float3x3(WorldTangent, WorldBiTangent, WorldNormal), true);
+    float3 normalWS = TransformTangentToWorld(normal, float3x3(WorldTangent, WorldBiNormal, WorldNormal), true);
     
     // Albedo
-    float4 color = tex2D(_BaseMap, IN.uv);
+    float4 albedo = tex2D(_BaseMap, IN.uv);
     
     // NDotL
     float NDotL = saturate(dot(normalWS, -IN.lightDirection));
     
+    // Diffuse
+    float3 diffuse = _MainLightColor.rgb * albedo.rgb * NDotL;
+    
     // Specular
-    float3 H = normalize(IN.lightDirection + IN.viewDirection);
-    float Specular = pow(saturate(dot(H, normalWS)), _SpecularPower);
-    float3 SpecularColor = _SpecularColor.rgb * Specular;
-    half3 light = NDotL * _MainLightColor.rgb + _Ambient;
+    float3 specular = 0;
+    if ( diffuse.x > 0 )
+    {
+         float3 reflection = reflect(IN.lightDirection, normalWS);
+         float3 viewDir = normalize(IN.viewDirection); 
+         specular = pow(saturate(dot(reflection, -viewDir )), _SpecularPower);
+         specular *= _SpecularColor.rgb;
+     }
 
-    color.rgb *= light;
-    color.rgb += SpecularColor;
-
-    return color;
+    float3 ambient = _Ambient.rgb * albedo;
+    float4 outputColor = float4(ambient + diffuse + specular, 1);
+    return outputColor;
 }
 ]]></RmShaderCode>
      <RmSampler NAME="_BaseMap" API="" REGISTER="0"/>
