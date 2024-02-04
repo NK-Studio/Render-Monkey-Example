@@ -919,7 +919,7 @@
         <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="916" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="655" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
-        <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
+        <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Minimized X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
         <RmIntegerVariable NAME="Minimized Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        </RmRegistryBranch>
@@ -993,10 +993,10 @@ Pixel Shader]]></RmTextDataBlock></RmStringVariable>
        <RmStringVariable NAME="Editing Pass" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 Pass 0]]></RmTextDataBlock></RmStringVariable>
        <RmIntegerVariable NAME="Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
-       <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1563" MIN="-10" MAX="10" CLAMP="FALSE"/>
-       <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1114" MIN="-10" MAX="10" CLAMP="FALSE"/>
+       <RmIntegerVariable NAME="Width" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1655" MIN="-10" MAX="10" CLAMP="FALSE"/>
+       <RmIntegerVariable NAME="Height" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1290" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="ShowStatus" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
-       <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
+       <RmIntegerVariable NAME="Visible" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Minimized X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="Minimized Y" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="-1" MIN="-10" MAX="10" CLAMP="FALSE"/>
        <RmIntegerVariable NAME="X" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="" VALUE="0" MIN="-10" MAX="10" CLAMP="FALSE"/>
@@ -1054,7 +1054,7 @@ Pass 0]]></RmTextDataBlock></RmStringVariable>
     </RmRegistryBranch>
     <RmRegistryBranch NAME="WORKSPACE" API="" XML_VERSION="RenderMonkey 1.71">
      <RmStringVariable NAME="LAST_SAVE" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
-5/2/2024 8:18:40]]></RmTextDataBlock></RmStringVariable>
+5/2/2024 8:27:40]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
 RenderMonkey Version 1.82 (build 322)]]></RmTextDataBlock></RmStringVariable>
      <RmStringVariable NAME="XML_VERSION" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC=""><RmTextDataBlock TYPE="TEXT"><![CDATA[
@@ -1076,10 +1076,10 @@ C:\Users\bnm00\Desktop\Render-Monkey-Example\]]></RmTextDataBlock></RmStringVari
    <RmMatrixVariable NAME="MATRIX_V" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="View" VALUE_0="0.676848" VALUE_1="-0.350286" VALUE_2="-0.647439" VALUE_3="0.000000" VALUE_4="0.285375" VALUE_5="-0.685882" VALUE_6="0.669423" VALUE_7="0.000114" VALUE_8="-0.678556" VALUE_9="-0.637860" VALUE_10="-0.364274" VALUE_11="199.999771" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
    <RmMatrixVariable NAME="MATRIX_W" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="World" VALUE_0="1.000000" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="1.000000" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.000000" VALUE_11="0.000000" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="0.000000" VALUE_15="1.000000"/>
    <RmMatrixVariable NAME="MATRIX_P" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="Projection" VALUE_0="1.655766" VALUE_1="0.000000" VALUE_2="0.000000" VALUE_3="0.000000" VALUE_4="0.000000" VALUE_5="2.414214" VALUE_6="0.000000" VALUE_7="0.000000" VALUE_8="0.000000" VALUE_9="0.000000" VALUE_10="1.001001" VALUE_11="-1.001001" VALUE_12="0.000000" VALUE_13="0.000000" VALUE_14="1.000000" VALUE_15="0.000000"/>
-   <RmMatrixVariable NAME="MATRIX_VP" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewProjection" VALUE_0="1.649991" VALUE_1="0.122900" VALUE_2="-0.063152" VALUE_3="-0.000000" VALUE_4="0.092295" VALUE_5="0.000526" VALUE_6="2.412449" VALUE_7="0.000119" VALUE_8="0.074254" VALUE_9="-0.998240" VALUE_10="-0.002623" VALUE_11="218.921371" VALUE_12="0.074180" VALUE_13="-0.997242" VALUE_14="-0.002620" VALUE_15="219.702454"/>
+   <RmMatrixVariable NAME="MATRIX_VP" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewProjection" VALUE_0="1.516257" VALUE_1="0.040830" VALUE_2="-0.663972" VALUE_3="-0.000002" VALUE_4="0.928194" VALUE_5="0.569500" VALUE_6="2.154659" VALUE_7="-0.000241" VALUE_8="0.116720" VALUE_9="-0.972438" VALUE_10="0.206745" VALUE_11="199.199051" VALUE_12="0.116603" VALUE_13="-0.971466" VALUE_14="0.206538" VALUE_15="199.999847"/>
    <RmFloatVariable NAME="_BumpScale" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="1.000000" MIN="0.000000" MAX="10.000000" CLAMP="TRUE"/>
    <RmFloatVariable NAME="_Parallax" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE="0.032750" MIN="0.005000" MAX="0.080000" CLAMP="TRUE"/>
-   <RmVectorVariable NAME="_WorldSpaceCameraPos" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewPosition" VALUE_0="-16.297422" VALUE_1="219.096375" VALUE_2="0.575696" VALUE_3="1.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
+   <RmVectorVariable NAME="_WorldSpaceCameraPos" API="" ARTIST_EDITABLE="FALSE" VARIABLE_SEMANTIC="ViewPosition" VALUE_0="-23.320559" VALUE_1="194.292999" VALUE_2="-41.307545" VALUE_3="1.000000" MIN="-10.000000" MAX="10.000000" CLAMP="FALSE" NORMALIZE="FALSE"/>
    <RmColorVariable NAME="_Ambient" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.460938" VALUE_1="0.460938" VALUE_2="0.460938" VALUE_3="1.000000"/>
    <RmColorVariable NAME="_MainLightColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.700000" VALUE_1="0.700000" VALUE_2="1.000000" VALUE_3="1.000000"/>
    <RmColorVariable NAME="_SpecularColor" API="" ARTIST_EDITABLE="TRUE" VARIABLE_SEMANTIC="" VALUE_0="0.700000" VALUE_1="0.700000" VALUE_2="0.700000" VALUE_3="1.000000"/>
@@ -1160,9 +1160,13 @@ float3 TransformObjectToViewNormal(float3 normalOS)
 }
 
 // Normalize to support uniform scaling
-float3 TransformObjectToWorldDir(float3 dirOS)
+float3 TransformObjectToWorldDir(float3 dirOS, bool doNormalize = true)
 {
     float3 dirWS = mul(dirOS, (float3x3)MATRIX_W);
+    
+    if (doNormalize)
+       return normalize(dirWS);
+       
     return dirWS;
 }
 
@@ -1191,9 +1195,9 @@ Varying vs_main(Attribute IN)
     Out.lightDirection = normalize(positionWS - _MainLightPosition);    
     Out.viewDirection = GetWorldSpaceNormalizeViewDir(positionWS);
     
-    Out.tSpace0 = normalize(mul(IN.normalOS, (float3x3)MATRIX_W));
-    Out.tSpace1 = normalize(mul(IN.tangentOS, (float3x3)MATRIX_W));
-    Out.tSpace2 = normalize(mul(IN.binormalOS, (float3x3)MATRIX_W));
+    Out.tSpace0 = TransformObjectToWorldDir(IN.normalOS); // NormalWS
+    Out.tSpace1 = TransformObjectToWorldDir(IN.tangentOS); // TangentWS
+    Out.tSpace2 = TransformObjectToWorldDir(IN.binormalOS); // BiNormalWS
 
     Out.uv = IN.uv;
 
@@ -1222,7 +1226,7 @@ float3 UnpackNormalAG(float4 packedNormal, float scale = 1.0)
     return normal;
 }
 
-float3 TransformTangentToWorld(float3 normalTS, float3x3 tangentToWorld, bool doNormalize)
+float3 TransformTangentToWorld(float3 normalTS, float3x3 tangentToWorld, bool doNormalize = false)
 {
     float3 result = mul(transpose(tangentToWorld), normalTS);
     
